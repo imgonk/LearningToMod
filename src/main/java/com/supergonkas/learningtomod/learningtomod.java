@@ -1,7 +1,9 @@
 package com.supergonkas.learningtomod;
 
+import com.supergonkas.learningtomod.proxy.IProxy;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -20,6 +22,10 @@ public class learningtomod {
 
     @Mod.Instance("learningtomod")
     public static learningtomod instance;
+
+    @SidedProxy()
+
+    public static IProxy proxy
 
 
     @Mod.EventHandler
