@@ -1,6 +1,7 @@
 package com.supergonkas.learningtomod;
 
 import com.supergonkas.learningtomod.proxy.IProxy;
+import com.supergonkas.learningtomod.reference.Reference;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -8,7 +9,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = "learningtomod", name = "Learning To Mod", version = "1.7.2-1.0")
+@Mod(modid = Reference.MOD_ID, name = "Learning To Mod", version = "1.7.2-1.0")
 
 //public class leaningtomod {
 //
@@ -23,9 +24,9 @@ public class learningtomod {
     @Mod.Instance("learningtomod")
     public static learningtomod instance;
 
-    @SidedProxy()
+    @SidedProxy(clientSide = "com.supergonkas.learningtomod.proxy.ClientProxy" , serverSide = "com.supergonkas.learningtomod.proxy.ServerProxy")
 
-    public static IProxy proxy
+    public static IProxy proxy;
 
 
     @Mod.EventHandler
