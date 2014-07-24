@@ -9,7 +9,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Reference.MOD_ID, name = "Learning To Mod", version = "1.7.2-1.0")
+@Mod(modid = Reference.MOD_ID, name = Reference.Mod_NAME , version = Reference.Version )
 
 //public class leaningtomod {
 //
