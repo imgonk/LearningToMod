@@ -1,5 +1,6 @@
 package com.supergonkas.learningtomod;
 
+import com.supergonkas.learningtomod.configuration.ConfigurationHandler;
 import com.supergonkas.learningtomod.proxy.IProxy;
 import com.supergonkas.learningtomod.reference.Reference;
 import cpw.mods.fml.common.FMLCommonHandler;
@@ -24,14 +25,14 @@ public class learningtomod {
     @Mod.Instance("learningtomod")
     public static learningtomod instance;
 
-    @SidedProxy(clientSide = "com.supergonkas.learningtomod.proxy.ClientProxy" , serverSide = "com.supergonkas.learningtomod.proxy.ServerProxy")
-
+    @SidedProxy(clientSide = Reference.Client_Proxy_Class, serverSide = Reference.Server_Proxy_class)
     public static IProxy proxy;
 
 
     @Mod.EventHandler
-    public void preInit(FMLPreInitializationEvent event) {
-
+    public void preInit(FMLPreInitializationEvent event)
+    {
+        ConfigurationHandler.Init(event.getSuggestedConfigurationFile());
     }
 
     @Mod.EventHandler

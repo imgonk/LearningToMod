@@ -1,7 +1,4 @@
 package com.supergonkas.learningtomod.proxy;
 
-/**
- * Created by Gonçalo on 24-07-2014.
- */
-public class ClientProxy extends CommonProxy {
+public class ClientProxy extends CommonProxy{
 }
