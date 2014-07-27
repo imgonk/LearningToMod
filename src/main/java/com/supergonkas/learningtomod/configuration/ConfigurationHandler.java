@@ -4,31 +4,31 @@ import net.minecraftforge.common.config.Configuration;
 
 import java.io.File;
 
-/**
- * Created by Gonçalo on 27-07-2014.
- */
 public class ConfigurationHandler
     {
-        public static void Init(File configFile)
-        { //it creates the cfg file from the given file
-            Configuration configuration= new configuration(configFile);
 
+        public static void Init(File configFile)
+        {
+            Configuration configuration = new Configuration(configFile);
+            boolean configValue = false;
             try
-            {   //trys to load the cfg
+            {
                 configuration.load();
 
-                //reads it!!!!
-                boolean configValue = configuration.get(configuration.CATEGORY_GENERAL,"configValue" , true,"This is an example config value").getBoolean(true)
+
+                configValue = configuration.get(configuration.CATEGORY_GENERAL,"configValue" , true,"This is an example config value").getBoolean(true);
             }
             catch (Exception e)
-            {       //catches an error ,if there is one
-
+            {
 
             }
             finally
             {
-                configuration.save();      //saves the cfg to finnalize
+                configuration.save();
+                /* saves the cfg to finnalize */
             }
+
+            System.out.println(configValue);
 
         }
     }
