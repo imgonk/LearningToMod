@@ -74,8 +74,8 @@
       <file leaf-file-name="ConfigurationHandler.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/supergonkas/learningtomod/configuration/ConfigurationHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73903507" vertical-offset="105" max-vertical-offset="629">
-              <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.53047407" vertical-offset="105" max-vertical-offset="680">
+              <caret line="20" column="158" selection-start-line="20" selection-start-column="158" selection-end-line="20" selection-end-column="158" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -551,7 +551,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="7" />
+    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -919,8 +919,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/supergonkas/learningtomod/configuration/ConfigurationHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73903507" vertical-offset="105" max-vertical-offset="629">
-          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.53047407" vertical-offset="105" max-vertical-offset="680">
+          <caret line="20" column="158" selection-start-line="20" selection-start-column="158" selection-end-line="20" selection-end-column="158" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

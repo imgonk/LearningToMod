@@ -16,6 +16,9 @@ public class ConfigurationHandler
             try
             {   //trys to load the cfg
                 configuration.load();
+
+                //reads it!!!!
+                boolean configValue = configuration.get(configuration.CATEGORY_GENERAL,"configValue" , true,"This is an example config value").getBoolean(true)
             }
             catch (Exception e)
             {       //catches an error ,if there is one
